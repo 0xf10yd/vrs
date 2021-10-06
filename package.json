@@ -1,0 +1,34 @@
+{
+	"name": "VRS",
+	"version": "1.0.0",
+	"author": "",
+	"description": "Video Rental Store in QERN stack",
+	"main": "server.js",
+	"scripts": {
+		"client": "cd client && yarn start",
+		"server": "nodemon server.js",
+		"dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+		"dev:server": "cd client && npm run build && cd .. && npm run start",
+		"start": "node server.js",
+		"heroku-postbuild": "cd client && npm install --only=dev --no-shrinkwrap && yarn build"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"concurrently": "^5.2.0"
+	},
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.19.0",
+		"cd": "^0.3.3",
+		"client": "^0.0.1",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"install": "^0.13.0",
+		"jsonwebtoken": "^8.5.1",
+		"npm": "^7.24.2",
+		"pg": "^8.2.1",
+		"pg-hstore": "^2.3.3",
+		"sequelize": "^6.3.0",
+		"sequelize-cli": "^6.2.0"
+	}
+}

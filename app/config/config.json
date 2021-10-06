@@ -1,0 +1,23 @@
+{
+	"development": {
+		"username": "admin1",
+		"password": "mjforlife",
+		"database": "vrs-dev",
+		"host": "localhost",
+		"dialect": "postgres"
+	},
+	"test": {
+		"username": "admin1",
+		"password": "mjforlife",
+		"database": "vrs-test",
+		"host": "localhost",
+		"dialect": "postgres"
+	},
+	"production": {
+		"username": "nzkrxdhn",
+		"password": "4w63O4rJDs9xvLpagQTTj5S8sHrlzulo",
+		"database": "nzkrxdhn",
+		"host": "fanny.db.elephantsql.com",
+		"dialect": "postgres"
+	}
+}
